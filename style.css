@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+ 
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #f8f7f4;
+}
+
+#page1{
+    width: 100%;
+    /* background-color: red; */
+}
+
+nav{
+    height: 6vw;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vw;
+}
+
+#nav-part1 img{
+    height: 5.5vw;
+    object-fit: cover;
+    /* background-color: yellow; */
+    cursor: pointer;
+}
+
+#nav-part1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: yellowgreen; */
+}
+
+#nav-part1 h4{
+    font-size: 1vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#nav-part2{
+    width: 32%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+
+#nav-part2 i{
+    position: absolute;
+    top: 32%;
+    left: 3%;
+    color: #777;
+}
+
+#nav-part2 input{
+    width: 46%;
+    padding: 1vw 2.5vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1vw;
+}
+
+#nav-part2 button{
+    padding: 1vw 1.5vw;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#nav-part2 #login{
+    background-color:#f8f7f4;
+}
+
+#nav-part2 #signup{
+    background-color:#0d0c22;
+    color: white;
+}
+
+#content{
+    height: calc(100% - 6vw);
+    width: 100%;
+    padding-top: 7vw;
+}
+
+#content h4{
+    width: fit-content;
+    padding: 0.5vw 1vw;
+    background-color: #e1b6ef;
+    border-radius: 50px;
+    font-weight: 500;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#content h1{
+    font-size: 5.5vw;
+    text-align: center;
+    font-weight: 500;
+    font-family: georgia;
+    margin-top: 3vw;
+    line-height: 5vw;
+    color: #0d0c22;
+}
+
+#content h3{
+    font-size: 1.4vw;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2vw;
+}
+
+#content button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 3vw 0;
+    padding: 1.5vw 2vw;
+    border: none;
+    border-radius: 50px;
+    background-color: #0d0c22;
+    color: white;
+}
+
+#marque{
+    height: 30vw;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#marque::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    display: inline-block;
+    position: relative;
+    height: 26vw;
+    width: 20%;
+    /* background-color: royalblue; */
+    margin-right: 2vw;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elem .text-bottom{
+    height: 34%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    color: white;
+}
+
+.text-bottom{
+    padding: 1.5vw;
+}
+
+.text-bottom h5{
+    font-weight: 500;
+}
+
+.text-bottom #tags{
+    display: flex;
+    align-items: center;
+}
+
+#tags h6{
+    margin-top: 0.9vw;
+    margin-right: 0.5vw;
+    padding: 0.5vw 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color:aquamarine; */
+    position: relative;
+    padding: 5vw;
+}
+
+#page2 h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+}
+
+.box{
+    height: 15vw;
+    width: 19.9vw;
+    /* background-color: red; */
+    display: inline-block;
+    border-radius: 0.7vw;
+    margin: 1vw;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-hover{
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2vw;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.text-hover h5{
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.text-hover i{
+    padding: 0.8vw;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+}
+
+.text-hover i:nth-child(1){
+    margin-right: 0.5vw;
+}
+
+.box:hover .text-hover{
+    opacity: 1;
+}
